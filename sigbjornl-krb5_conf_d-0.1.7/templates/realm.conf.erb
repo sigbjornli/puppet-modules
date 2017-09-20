@@ -1,0 +1,30 @@
+[realms]
+  <%= @realm %> = {
+<%- if @admin_server_1 -%>
+	admin_server = <%= @admin_server_1 %>
+<%- end -%>
+<%- if @admin_server_2 -%>
+	admin_server = <%= @admin_server_2 %>
+<%- end -%>
+<%- if @kdc_1 -%>
+	kdc = <%= @kdc_1 %>
+<%- end -%>
+<%- if @kdc_2 -%>
+	kdc = <%= @kdc_2 %>
+<%- end -%>
+<%- if @kdc_3 -%>
+	kdc = <%= @kdc_3 %>
+<%- end -%>
+<%- if @kpasswd_protocol -%>
+	kpasswd_protocol = <%= @kpasswd_protocol %>
+<%- end -%>
+<%- if @auth_to_local_1 -%>
+	auth_to_local = <%= @auth_to_local_1 %>
+<%- end -%>
+<%- if @auth_to_local_2 -%>
+	auth_to_local = <%= @auth_to_local_2 %>
+<%- end -%>
+<%- if @auth_to_local_3 -%>
+	auth_to_local = <%= @auth_to_local_3 %>
+<%- end -%>
+  }
